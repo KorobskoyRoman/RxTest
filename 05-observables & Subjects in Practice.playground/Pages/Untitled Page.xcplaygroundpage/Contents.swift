@@ -239,3 +239,39 @@ example(of: "Challenge 1") {
     
     input.onNext(9)
 }
+
+// from practice
+
+example(of: "practice") {
+    var start = 0
+    
+    func getStartNumber() -> Int {
+        start += 1
+        return start
+    }
+    
+    let numbers = Observable<Int>.create { observer in
+        let start = getStartNumber()
+        observer.onNext(start)
+        observer.onNext(start + 1)
+        observer.onNext(start + 2)
+        observer.onCompleted()
+        return Disposables.create()
+    }
+    
+    numbers
+        .subscribe { element in
+            print("element [\(element)]")
+        }
+        onCompleted: {
+            print("--------------------")
+        }
+    
+    numbers
+        .subscribe { element in
+            print("element [\(element)]")
+        }
+        onCompleted: {
+            print("--------------------")
+        }
+}
