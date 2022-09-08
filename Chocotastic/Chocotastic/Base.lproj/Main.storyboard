@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Edq-uY-yvD">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Edq-uY-yvD">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -25,14 +25,14 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ChocolateCell" rowHeight="90" id="RRE-kj-waP" customClass="ChocolateCell" customModule="Chocotastic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="90"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="375" height="90"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="RRE-kj-waP" id="qNi-Cy-hBS">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="PUW-sx-png">
-                                                    <rect key="frame" x="16" y="5.5" width="100" height="78.5"/>
+                                                    <rect key="frame" x="16" y="6" width="100" height="78.5"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🍫🇬🇮" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Svk-4M-FeM">
                                                             <rect key="frame" x="0.0" y="0.0" width="100" height="54"/>
@@ -41,7 +41,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MFY-f8-VAH">
-                                                            <rect key="frame" x="0.0" y="58" width="42" height="20.5"/>
+                                                            <rect key="frame" x="0.0" y="58" width="41.5" height="20.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                             <nil key="highlightedColor"/>
@@ -49,7 +49,7 @@
                                                     </subviews>
                                                 </stackView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$999" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuo-Ue-TiG">
-                                                    <rect key="frame" x="313" y="34.5" width="42" height="21"/>
+                                                    <rect key="frame" x="313.5" y="34.5" width="41.5" height="21"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="21" id="TBy-Cx-xeb"/>
                                                     </constraints>
@@ -113,10 +113,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="bottom" translatesAutoresizingMaskIntoConstraints="NO" id="kRW-7S-Wph">
-                                <rect key="frame" x="20" y="74" width="335" height="36"/>
+                                <rect key="frame" x="20" y="54" width="335" height="36"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Items" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bHe-rh-lzA">
-                                        <rect key="frame" x="0.0" y="0.0" width="167.5" height="36"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="139" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -132,8 +132,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-ab-i1o" customClass="ChocolateButton" customModule="Chocotastic" customModuleProvider="target">
-                                <rect key="frame" x="20" y="120" width="335" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YAf-ab-i1o" customClass="ChocolateButton" customModule="Chocotastic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="100" width="335" height="30"/>
                                 <color key="backgroundColor" red="0.36480686070000001" green="0.2037941664" blue="0.0026239487340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Checkout">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -142,8 +142,8 @@
                                     <segue destination="cTj-4K-tFI" kind="show" identifier="ToCheckout" id="r3J-lb-5cP"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-Eo-ab0" customClass="ChocolateButton" customModule="Chocotastic" customModuleProvider="target">
-                                <rect key="frame" x="20" y="158" width="335" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-Eo-ab0" customClass="ChocolateButton" customModule="Chocotastic" customModuleProvider="target">
+                                <rect key="frame" x="20" y="138" width="335" height="30"/>
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Reset"/>
                                 <userDefinedRuntimeAttributes>
@@ -190,7 +190,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NiA-T5-YuI">
-                                <rect key="frame" x="20" y="84" width="335" height="110"/>
+                                <rect key="frame" x="20" y="64" width="335" height="114"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="aDL-na-l0H">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
@@ -210,15 +210,15 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wN2-lo-zjP">
-                                        <rect key="frame" x="0.0" y="40" width="335" height="30"/>
+                                        <rect key="frame" x="0.0" y="40" width="335" height="34"/>
                                         <subviews>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Exp." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XeY-sP-tLU" customClass="ValidatingTextField" customModule="Chocotastic" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CVV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DVE-6j-zOv" customClass="ValidatingTextField" customModule="Chocotastic" customModuleProvider="target">
-                                                <rect key="frame" x="225" y="0.0" width="110" height="30"/>
+                                                <rect key="frame" x="225" y="0.0" width="110" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
@@ -227,8 +227,8 @@
                                             <constraint firstItem="DVE-6j-zOv" firstAttribute="width" secondItem="XeY-sP-tLU" secondAttribute="width" multiplier="0.5" id="D1T-tG-M4s"/>
                                         </constraints>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tj-Yj-YhX" customClass="ChocolateButton" customModule="Chocotastic" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="80" width="335" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8tj-Yj-YhX" customClass="ChocolateButton" customModule="Chocotastic" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="84" width="335" height="30"/>
                                         <state key="normal" title="Buy Chocolate!">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
@@ -288,37 +288,37 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zNQ-Lk-BqK">
-                                        <rect key="frame" x="30" y="318.5" width="130.5" height="91.5"/>
+                                        <rect key="frame" x="30" y="318.5" width="130" height="91.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Order" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjy-kH-cNV">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="88.5" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🇬🇮 🍫:  2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbD-5y-ohK">
-                                                <rect key="frame" x="0.0" y="20.5" width="130.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="20.5" width="130" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="One meelion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LCP-Rs-ga2">
-                                                <rect key="frame" x="0.0" y="41" width="130.5" height="20.5"/>
+                                                <rect key="frame" x="0.0" y="41" width="130" height="20.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="0WR-g9-umL">
-                                                <rect key="frame" x="0.0" y="61.5" width="130.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="61.5" width="130" height="30"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Paid With:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4OH-QB-wwT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="77.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="77" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unknownCard" translatesAutoresizingMaskIntoConstraints="NO" id="7c9-eM-9t3">
-                                                        <rect key="frame" x="82.5" y="0.0" width="48" height="30"/>
+                                                        <rect key="frame" x="82" y="0.0" width="48" height="30"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="48" id="Jbf-Sz-xGQ"/>
                                                             <constraint firstAttribute="height" constant="30" id="jw4-Kw-Qry"/>
@@ -370,10 +370,10 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Edq-uY-yvD" customClass="ChocolateNavigationController" customModule="Chocotastic" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="inz-qE-uR0">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <color key="barTintColor" red="0.36480686070000001" green="0.2037941664" blue="0.0026239487340000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" systemColor="systemGray3Color"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -388,8 +388,22 @@
             <point key="canvasLocation" x="196" y="313"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="8tj-Yj-YhX">
+            <size key="intrinsicContentSize" width="105" height="30"/>
+        </designable>
+        <designable name="YAf-ab-i1o">
+            <size key="intrinsicContentSize" width="66" height="30"/>
+        </designable>
+        <designable name="vXc-Eo-ab0">
+            <size key="intrinsicContentSize" width="39" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="success" width="320.66665649414062" height="266.66665649414062"/>
         <image name="unknownCard" width="99" height="60"/>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

@@ -73,16 +73,16 @@ private extension ChocolatesOfTheWorldViewController {
   func setupCellTapHandling() {
     tableView
       .rx
-      .modelSelected(Chocolate.self) //1
-      .subscribe(onNext: { [unowned self] chocolate in // 2
-        let newValue =  ShoppingCart.sharedCart.chocolates.value + [chocolate]
-        ShoppingCart.sharedCart.chocolates.accept(newValue) //3
+      .modelSelected(Chocolate.self)
+      .subscribe(onNext: { [unowned self] chocolate in
+        let newValue = ShoppingCart.sharedCart.chocolates.value + [chocolate]
+        ShoppingCart.sharedCart.chocolates.accept(newValue)
 
         if let selectedRowIndexPath = self.tableView.indexPathForSelectedRow {
           self.tableView.deselectRow(at: selectedRowIndexPath, animated: true)
-        } //4
+        }
       })
-      .disposed(by: disposeBag) //5
+      .disposed(by: disposeBag)
   }
 }
 
